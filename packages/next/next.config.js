@@ -8,7 +8,9 @@ const withTM = require('next-transpile-modules')([
   '@gorhom/bottom-sheet',
   '@gorhom/portal',
   'dripsy',
-  '@dripsy/core'
+  '@dripsy/core',
+  'moti',
+  '@motify/core'
 ]);
 
 const nextConfig = {};

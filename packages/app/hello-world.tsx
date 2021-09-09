@@ -1,11 +1,20 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { MotiView } from 'moti';
 
 export function HelloWorld() {
   return (
-    <View style={styles.container}>
-      <Text>Hello, World!</Text>
-    </View>
+    <MotiView
+      from={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{
+        opacity: 0
+      }}
+    >
+      <View style={styles.container}>
+        <Text>Hello, World!</Text>
+      </View>
+    </MotiView>
   );
 }
 
